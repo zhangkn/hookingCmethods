@@ -14,6 +14,13 @@
 		E1412CBB1F9D902900A0DBE0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1412CB91F9D902900A0DBE0 /* LaunchScreen.storyboard */; };
 		E1412CC61F9D902900A0DBE0 /* WatermarkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1412CC51F9D902900A0DBE0 /* WatermarkTests.swift */; };
 		E1412CD11F9D902900A0DBE0 /* WatermarkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1412CD01F9D902900A0DBE0 /* WatermarkUITests.swift */; };
+		E1412CDF1F9D90BB00A0DBE0 /* xx.png in Resources */ = {isa = PBXBuildFile; fileRef = E1412CDE1F9D90BB00A0DBE0 /* xx.png */; };
+		E1412CEE1F9D9A7F00A0DBE0 /* HookingC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1412CE51F9D9A7F00A0DBE0 /* HookingC.framework */; };
+		E1412CF51F9D9A7F00A0DBE0 /* HookingCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E1412CF41F9D9A7F00A0DBE0 /* HookingCTests.m */; };
+		E1412CF71F9D9A7F00A0DBE0 /* HookingC.h in Headers */ = {isa = PBXBuildFile; fileRef = E1412CE71F9D9A7F00A0DBE0 /* HookingC.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E1412CFA1F9D9A7F00A0DBE0 /* HookingC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1412CE51F9D9A7F00A0DBE0 /* HookingC.framework */; };
+		E1412CFB1F9D9A7F00A0DBE0 /* HookingC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E1412CE51F9D9A7F00A0DBE0 /* HookingC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E1412D041F9D9C0600A0DBE0 /* getenvhook.c in Sources */ = {isa = PBXBuildFile; fileRef = E1412D031F9D9C0600A0DBE0 /* getenvhook.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +38,42 @@
 			remoteGlobalIDString = E1412CAC1F9D902900A0DBE0;
 			remoteInfo = Watermark;
 		};
+		E1412CEF1F9D9A7F00A0DBE0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E1412CA51F9D902900A0DBE0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E1412CE41F9D9A7F00A0DBE0;
+			remoteInfo = HookingC;
+		};
+		E1412CF11F9D9A7F00A0DBE0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E1412CA51F9D902900A0DBE0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E1412CAC1F9D902900A0DBE0;
+			remoteInfo = Watermark;
+		};
+		E1412CF81F9D9A7F00A0DBE0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E1412CA51F9D902900A0DBE0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E1412CE41F9D9A7F00A0DBE0;
+			remoteInfo = HookingC;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E1412CFF1F9D9A7F00A0DBE0 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E1412CFB1F9D9A7F00A0DBE0 /* HookingC.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		E1412CAD1F9D902900A0DBE0 /* Watermark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Watermark.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +89,14 @@
 		E1412CCC1F9D902900A0DBE0 /* WatermarkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WatermarkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1412CD01F9D902900A0DBE0 /* WatermarkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatermarkUITests.swift; sourceTree = "<group>"; };
 		E1412CD21F9D902900A0DBE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1412CDE1F9D90BB00A0DBE0 /* xx.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = xx.png; sourceTree = "<group>"; };
+		E1412CE51F9D9A7F00A0DBE0 /* HookingC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HookingC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1412CE71F9D9A7F00A0DBE0 /* HookingC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HookingC.h; sourceTree = "<group>"; };
+		E1412CE81F9D9A7F00A0DBE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1412CED1F9D9A7F00A0DBE0 /* HookingCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HookingCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1412CF41F9D9A7F00A0DBE0 /* HookingCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HookingCTests.m; sourceTree = "<group>"; };
+		E1412CF61F9D9A7F00A0DBE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1412D031F9D9C0600A0DBE0 /* getenvhook.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = getenvhook.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1412CFA1F9D9A7F00A0DBE0 /* HookingC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +122,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E1412CE11F9D9A7F00A0DBE0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1412CEA1F9D9A7F00A0DBE0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1412CEE1F9D9A7F00A0DBE0 /* HookingC.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -80,6 +146,8 @@
 				E1412CAF1F9D902900A0DBE0 /* Watermark */,
 				E1412CC41F9D902900A0DBE0 /* WatermarkTests */,
 				E1412CCF1F9D902900A0DBE0 /* WatermarkUITests */,
+				E1412CE61F9D9A7F00A0DBE0 /* HookingC */,
+				E1412CF31F9D9A7F00A0DBE0 /* HookingCTests */,
 				E1412CAE1F9D902900A0DBE0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +158,8 @@
 				E1412CAD1F9D902900A0DBE0 /* Watermark.app */,
 				E1412CC11F9D902900A0DBE0 /* WatermarkTests.xctest */,
 				E1412CCC1F9D902900A0DBE0 /* WatermarkUITests.xctest */,
+				E1412CE51F9D9A7F00A0DBE0 /* HookingC.framework */,
+				E1412CED1F9D9A7F00A0DBE0 /* HookingCTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -103,6 +173,7 @@
 				E1412CB71F9D902900A0DBE0 /* Assets.xcassets */,
 				E1412CB91F9D902900A0DBE0 /* LaunchScreen.storyboard */,
 				E1412CBC1F9D902900A0DBE0 /* Info.plist */,
+				E1412CDE1F9D90BB00A0DBE0 /* xx.png */,
 			);
 			path = Watermark;
 			sourceTree = "<group>";
@@ -125,7 +196,37 @@
 			path = WatermarkUITests;
 			sourceTree = "<group>";
 		};
+		E1412CE61F9D9A7F00A0DBE0 /* HookingC */ = {
+			isa = PBXGroup;
+			children = (
+				E1412CE71F9D9A7F00A0DBE0 /* HookingC.h */,
+				E1412D031F9D9C0600A0DBE0 /* getenvhook.c */,
+				E1412CE81F9D9A7F00A0DBE0 /* Info.plist */,
+			);
+			path = HookingC;
+			sourceTree = "<group>";
+		};
+		E1412CF31F9D9A7F00A0DBE0 /* HookingCTests */ = {
+			isa = PBXGroup;
+			children = (
+				E1412CF41F9D9A7F00A0DBE0 /* HookingCTests.m */,
+				E1412CF61F9D9A7F00A0DBE0 /* Info.plist */,
+			);
+			path = HookingCTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		E1412CE21F9D9A7F00A0DBE0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1412CF71F9D9A7F00A0DBE0 /* HookingC.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		E1412CAC1F9D902900A0DBE0 /* Watermark */ = {
@@ -135,10 +236,12 @@
 				E1412CA91F9D902900A0DBE0 /* Sources */,
 				E1412CAA1F9D902900A0DBE0 /* Frameworks */,
 				E1412CAB1F9D902900A0DBE0 /* Resources */,
+				E1412CFF1F9D9A7F00A0DBE0 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				E1412CF91F9D9A7F00A0DBE0 /* PBXTargetDependency */,
 			);
 			name = Watermark;
 			productName = Watermark;
@@ -181,6 +284,43 @@
 			productReference = E1412CCC1F9D902900A0DBE0 /* WatermarkUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		E1412CE41F9D9A7F00A0DBE0 /* HookingC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1412CFC1F9D9A7F00A0DBE0 /* Build configuration list for PBXNativeTarget "HookingC" */;
+			buildPhases = (
+				E1412CE01F9D9A7F00A0DBE0 /* Sources */,
+				E1412CE11F9D9A7F00A0DBE0 /* Frameworks */,
+				E1412CE21F9D9A7F00A0DBE0 /* Headers */,
+				E1412CE31F9D9A7F00A0DBE0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HookingC;
+			productName = HookingC;
+			productReference = E1412CE51F9D9A7F00A0DBE0 /* HookingC.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E1412CEC1F9D9A7F00A0DBE0 /* HookingCTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1412D001F9D9A7F00A0DBE0 /* Build configuration list for PBXNativeTarget "HookingCTests" */;
+			buildPhases = (
+				E1412CE91F9D9A7F00A0DBE0 /* Sources */,
+				E1412CEA1F9D9A7F00A0DBE0 /* Frameworks */,
+				E1412CEB1F9D9A7F00A0DBE0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E1412CF01F9D9A7F00A0DBE0 /* PBXTargetDependency */,
+				E1412CF21F9D9A7F00A0DBE0 /* PBXTargetDependency */,
+			);
+			name = HookingCTests;
+			productName = HookingCTests;
+			productReference = E1412CED1F9D9A7F00A0DBE0 /* HookingCTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -208,6 +348,17 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = E1412CAC1F9D902900A0DBE0;
 					};
+					E1412CE41F9D9A7F00A0DBE0 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = UVWU8XCYJX;
+						ProvisioningStyle = Automatic;
+					};
+					E1412CEC1F9D9A7F00A0DBE0 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = UVWU8XCYJX;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E1412CAC1F9D902900A0DBE0;
+					};
 				};
 			};
 			buildConfigurationList = E1412CA81F9D902900A0DBE0 /* Build configuration list for PBXProject "Watermark" */;
@@ -226,6 +377,8 @@
 				E1412CAC1F9D902900A0DBE0 /* Watermark */,
 				E1412CC01F9D902900A0DBE0 /* WatermarkTests */,
 				E1412CCB1F9D902900A0DBE0 /* WatermarkUITests */,
+				E1412CE41F9D9A7F00A0DBE0 /* HookingC */,
+				E1412CEC1F9D9A7F00A0DBE0 /* HookingCTests */,
 			);
 		};
 /* End PBXProject section */
@@ -236,6 +389,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1412CBB1F9D902900A0DBE0 /* LaunchScreen.storyboard in Resources */,
+				E1412CDF1F9D90BB00A0DBE0 /* xx.png in Resources */,
 				E1412CB81F9D902900A0DBE0 /* Assets.xcassets in Resources */,
 				E1412CB61F9D902900A0DBE0 /* Main.storyboard in Resources */,
 			);
@@ -249,6 +403,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		E1412CCA1F9D902900A0DBE0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1412CE31F9D9A7F00A0DBE0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1412CEB1F9D9A7F00A0DBE0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -283,6 +451,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E1412CE01F9D9A7F00A0DBE0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1412D041F9D9C0600A0DBE0 /* getenvhook.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1412CE91F9D9A7F00A0DBE0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1412CF51F9D9A7F00A0DBE0 /* HookingCTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -295,6 +479,21 @@
 			isa = PBXTargetDependency;
 			target = E1412CAC1F9D902900A0DBE0 /* Watermark */;
 			targetProxy = E1412CCD1F9D902900A0DBE0 /* PBXContainerItemProxy */;
+		};
+		E1412CF01F9D9A7F00A0DBE0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E1412CE41F9D9A7F00A0DBE0 /* HookingC */;
+			targetProxy = E1412CEF1F9D9A7F00A0DBE0 /* PBXContainerItemProxy */;
+		};
+		E1412CF21F9D9A7F00A0DBE0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E1412CAC1F9D902900A0DBE0 /* Watermark */;
+			targetProxy = E1412CF11F9D9A7F00A0DBE0 /* PBXContainerItemProxy */;
+		};
+		E1412CF91F9D9A7F00A0DBE0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E1412CE41F9D9A7F00A0DBE0 /* HookingC */;
+			targetProxy = E1412CF81F9D9A7F00A0DBE0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -495,6 +694,76 @@
 			};
 			name = Release;
 		};
+		E1412CFD1F9D9A7F00A0DBE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = UVWU8XCYJX;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = HookingC/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.weiliu.HookingC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E1412CFE1F9D9A7F00A0DBE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = UVWU8XCYJX;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = HookingC/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.weiliu.HookingC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E1412D011F9D9A7F00A0DBE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = UVWU8XCYJX;
+				INFOPLIST_FILE = HookingCTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.weiliu.HookingCTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Watermark.app/Watermark";
+			};
+			name = Debug;
+		};
+		E1412D021F9D9A7F00A0DBE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = UVWU8XCYJX;
+				INFOPLIST_FILE = HookingCTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.weiliu.HookingCTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Watermark.app/Watermark";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -528,6 +797,22 @@
 			buildConfigurations = (
 				E1412CDC1F9D902900A0DBE0 /* Debug */,
 				E1412CDD1F9D902900A0DBE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E1412CFC1F9D9A7F00A0DBE0 /* Build configuration list for PBXNativeTarget "HookingC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1412CFD1F9D9A7F00A0DBE0 /* Debug */,
+				E1412CFE1F9D9A7F00A0DBE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E1412D001F9D9A7F00A0DBE0 /* Build configuration list for PBXNativeTarget "HookingCTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1412D011F9D9A7F00A0DBE0 /* Debug */,
+				E1412D021F9D9A7F00A0DBE0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

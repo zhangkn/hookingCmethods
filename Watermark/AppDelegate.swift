@@ -13,9 +13,32 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+//
+//    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+//        // Override point for customization after application launch.
+//        return true
+//    }
+    
+    func application(_ application: UIApplication,
+                     didFinishLaunchingWithOptions launchOptions:
+        [UIApplicationLaunchOptionsKey : Any]? = nil) -> Bool {
+        if let cString = getenv("HOME") {
+            let homeEnv = String(cString: cString)
+            print("HOME env: \(homeEnv)")
+        }
+        
+        if let cString = getenv("IPHONE_SIMULATOR_ROOT") {
+            let homeEnv = String(cString: cString)
+            print(" IPHONE_SIMULATOR_ROOT: \(homeEnv)")
+        }
+        /**
+         
+         HOME env: /Users/devzkn/Library/Developer/CoreSimulator/Devices/2499648A-9622-42D9-8931-C342DB0208CC/data/Containers/Data/Application/E0628F2F-2491-4F86-A7D2-3C3375526D60
+         "IPHONE_SIMULATOR_ROOT"
+         
+         IPHONE_SIMULATOR_ROOT: /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk
+         */
+        
         return true
     }
 
